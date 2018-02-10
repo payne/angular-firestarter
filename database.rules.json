@@ -7,8 +7,8 @@
       ".write": "auth != null"
     },
    "items": {
-      ".write": "auth != null",
-      ".read": "auth != null"
+      ".read": "root.child('users').child(auth.uid).val() == true",
+      ".write": "auth != null"
     },
     "users": {
       ".write": "auth != null"
