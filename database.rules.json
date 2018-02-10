@@ -1,13 +1,14 @@
 {
   "rules": {
-    ".read": true,
+    ".read": false,
     ".write": false,
 
     "uploads": {
       ".write": "auth != null"
     },
    "items": {
-      ".write": "auth != null"
+      ".write": "auth != null",
+      ".read": "auth != null"
     },
     "users": {
       ".write": "auth != null"
