@@ -2,10 +2,8 @@
 
 <label class="label">Name: </label>
 
-<input placeholder="Item Title" class="input"
-[(ngModel)]="item.title"
-required minlength="2" maxlength="23"
-#title='ngModel' autofocus>
+
+<textarea cols="20" rows="15" class="input" [(ngModel)]="item.title" #title='ngModel'> </textarea>
 
 <div *ngIf="title.dirty">
   <span *ngIf='title.errors; then errors else valid'>template renders here...</span>
