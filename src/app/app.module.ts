@@ -15,6 +15,7 @@ import { SharedModule } from './shared/shared.module';
 
 // Feature Modules
 import { ItemModule } from './items/shared/item.module';
+import { MarkdownModule } from './markdowns/shared/markdown.module';
 import { UploadModule } from './uploads/shared/upload.module';
 import { UiModule } from './ui/shared/ui.module';
 import { NotesModule } from './notes/notes.module';
@@ -37,6 +38,7 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
     CoreModule,
     SharedModule,
     ItemModule,
+    MarkdownModule,
     UiModule,
     NotesModule,
     AngularFireModule.initializeApp(firebaseConfig),

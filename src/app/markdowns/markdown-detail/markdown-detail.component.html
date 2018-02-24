@@ -1,0 +1,15 @@
+<h3 [ngClass]="{ 'strike-out': !markdown.active }">
+  {{ markdown.title || 'missing title' }}
+</h3>
+
+<div class="card-content">
+  Task Active?: {{ markdown.active }}<br>
+  {{ markdown.timeStamp | date: 'medium' }}
+</div>
+
+<div class="card-footer">
+  <span class="button is-small is-info card-footer-markdown" (click)='updateTimeStamp()'>Update Timestamp</span>
+  <span class="button is-small is-success card-footer-markdown" *ngIf='markdown.active' (click)='updateActive(false)'>Mark Complete</span>
+  <span class="button is-small is-warning card-footer-markdown" *ngIf='!markdown.active' (click)='updateActive(true)'>Mark Incomplete</span>
+  <span class="button is-small is-danger card-footer-markdown" (click)='deleteMarkdown()'>Delete</span>
+</div>
