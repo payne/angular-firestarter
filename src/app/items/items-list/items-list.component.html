@@ -2,6 +2,13 @@
 
 <p>This page is a demo of a very basic todo list in Angular, using the Firebase Realtime DB on the backend.</p>
 
+<div>
+  <ngx-datatable
+     [rows]="rows"
+     [columns]="columns">
+  </ngx-datatable>
+</div>
+
 <div *ngFor="let item of items | async" class="card">
   <item-detail [item]='item'></item-detail>
 </div>

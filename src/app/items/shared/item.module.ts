@@ -6,6 +6,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { SharedModule } from '../../shared/shared.module';
 
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+
 import { ItemService } from './item.service';
 
 import { ItemsListComponent } from '../items-list/items-list.component';
@@ -14,6 +16,7 @@ import { ItemDetailComponent } from '../item-detail/item-detail.component';
 
 @NgModule({
   imports: [
+    NgxDatatableModule,
     CommonModule,
     SharedModule,
     ReactiveFormsModule,
