@@ -16,6 +16,8 @@ import { FooterNavComponent } from '../footer-nav/footer-nav.component';
 import { ReadmePageComponent } from '../readme-page/readme-page.component';
 import { NotificationMessageComponent } from '../notification-message/notification-message.component';
 
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -24,6 +26,9 @@ import { NotificationMessageComponent } from '../notification-message/notificati
     ReactiveFormsModule,
     RouterModule,
     BrowserAnimationsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDdRgDvSt-mWg6pr50AWXEDvE5_In5TPD8',
+   }),
   ],
   declarations: [
     UserLoginComponent,
