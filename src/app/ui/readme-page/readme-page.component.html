@@ -16,3 +16,10 @@
   <i class="fa fa-youtube fa-lg"></i>
   Subscribe to the <a href="https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA">AngularFirebase YouTube Channel</a> for weekly lessons.
 </p>
+
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->
+<agm-map [latitude]="lat" [longitude]="lng">
+				  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+

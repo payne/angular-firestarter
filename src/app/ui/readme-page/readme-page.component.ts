@@ -5,4 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './readme-page.component.html',
   styleUrls: ['./readme-page.component.scss'],
 })
-export class ReadmePageComponent {}
+export class ReadmePageComponent {
+  lat = 51.678418;
+  lng = 7.809007;
+}
