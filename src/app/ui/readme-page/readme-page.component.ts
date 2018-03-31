@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./readme-page.component.scss'],
 })
 export class ReadmePageComponent {
-  lat = 51.678418;
-  lng = 7.809007;
+  lat = 41.258122;
+  lng = -96.010712;
 }
